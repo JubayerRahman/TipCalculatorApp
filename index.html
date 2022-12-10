@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <!-- <h1 class="main-title">SPLT <br> TTER</h1> -->
+  <main>
+    <div class="leftSection">
+      <div class="billSection">
+      <h5>Bill</h5>
+      <div class="billInputSection">
+       <input id="bill" type="number" placeholder="0" value="">
+       <i class="fa-solid fa-dollar-sign"></i>
+      </div>
+      </div>
+      <div class="percentSection">
+        <h5>Select Tip %</h5>
+        <div class="percentButtons">
+          <button id="percentButton5" class="percentButton" value="5">5%</button>
+          <button id="percentButton10" class="percentButton" value="10">10%</button>
+          <button id="percentButton15" class="percentButton" value="15">15%</button>
+          <button id="percentButton25" class="percentButton" value="25">25%</button>
+          <button id="percentButton50" class="percentButton" value="50">50%</button>
+          <input  id="custom" value="" type="number" class="custom" placeholder="Custom">
+        </div>
+      </div>
+      <div class="peopleSection">
+        <h5>Number of People</h5>
+        <div class="billInputSection">
+        <input type="number" placeholder="0" id="peopleNumber" value="1">
+        <i class="fa-solid fa-users"></i>
+      </div>
+      </div>
+  </div>
+    <div class="rightSection">
+      <div class="tAmount">
+      <h5> <span class="amount">Tip Amount</span> <br>
+        / person</h5>
+      <h1 class="total" >$ <span id="tip">0.00</span></h1>
+      </div>
+      <div class="pAmount">
+      <h5><span class="amount">Total</span> <br>
+        / person</h5>
+      <h1 class="total">$ <span id="totalPrice">0.00 </span></h1>
+      </div>
+      <button id="reset">RESET</button>
+  </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://jubayerrahman.github.io/JubayerCompletePortfolio/" target="_blank">Jobayer Rahman</a>.
+  </div>
+  <!-- js linked -->
+  <script src="./functin.js"></script>
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/c74447f892.js" crossorigin="anonymous"></script>
+</body>
+</html>
